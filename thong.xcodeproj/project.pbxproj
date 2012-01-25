@@ -12,9 +12,10 @@
 		9D704C8714D066150012C038 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704C8614D066150012C038 /* CoreServices.framework */; };
 		9D704C8914D066150012C038 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704C8814D066150012C038 /* CoreFoundation.framework */; };
 		9D704C8F14D066150012C038 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D704C8D14D066150012C038 /* InfoPlist.strings */; };
-		9D704C9114D066150012C038 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9014D066150012C038 /* GenerateThumbnailForURL.c */; };
-		9D704C9314D066150012C038 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9214D066150012C038 /* GeneratePreviewForURL.c */; };
+		9D704C9114D066150012C038 /* GenerateThumbnailForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9014D066150012C038 /* GenerateThumbnailForURL.m */; };
+		9D704C9314D066150012C038 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9214D066150012C038 /* GeneratePreviewForURL.m */; };
 		9D704C9514D066150012C038 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9414D066150012C038 /* main.c */; };
+		9D704CA614D06A3F0012C038 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704CA514D06A3F0012C038 /* Cocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +26,11 @@
 		9D704C8814D066150012C038 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9D704C8C14D066150012C038 /* thong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "thong-Info.plist"; sourceTree = "<group>"; };
 		9D704C8E14D066150012C038 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9D704C9014D066150012C038 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		9D704C9214D066150012C038 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		9D704C9014D066150012C038 /* GenerateThumbnailForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GenerateThumbnailForURL.m; sourceTree = "<group>"; };
+		9D704C9214D066150012C038 /* GeneratePreviewForURL.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeneratePreviewForURL.m; sourceTree = "<group>"; };
 		9D704C9414D066150012C038 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		9D704C9614D066150012C038 /* thong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thong-Prefix.pch"; sourceTree = "<group>"; };
+		9D704CA514D06A3F0012C038 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D704CA614D06A3F0012C038 /* Cocoa.framework in Frameworks */,
 				9D704C8314D066150012C038 /* QuickLook.framework in Frameworks */,
 				9D704C8514D066150012C038 /* ApplicationServices.framework in Frameworks */,
 				9D704C8714D066150012C038 /* CoreServices.framework in Frameworks */,
@@ -49,6 +52,7 @@
 		9D704C7214D066150012C038 = {
 			isa = PBXGroup;
 			children = (
+				9D704CA514D06A3F0012C038 /* Cocoa.framework */,
 				9D704C8A14D066150012C038 /* thong */,
 				9D704C8114D066150012C038 /* Frameworks */,
 				9D704C8014D066150012C038 /* Products */,
@@ -77,8 +81,8 @@
 		9D704C8A14D066150012C038 /* thong */ = {
 			isa = PBXGroup;
 			children = (
-				9D704C9014D066150012C038 /* GenerateThumbnailForURL.c */,
-				9D704C9214D066150012C038 /* GeneratePreviewForURL.c */,
+				9D704C9014D066150012C038 /* GenerateThumbnailForURL.m */,
+				9D704C9214D066150012C038 /* GeneratePreviewForURL.m */,
 				9D704C9414D066150012C038 /* main.c */,
 				9D704C8B14D066150012C038 /* Supporting Files */,
 			);
@@ -179,8 +183,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D704C9114D066150012C038 /* GenerateThumbnailForURL.c in Sources */,
-				9D704C9314D066150012C038 /* GeneratePreviewForURL.c in Sources */,
+				9D704C9114D066150012C038 /* GenerateThumbnailForURL.m in Sources */,
+				9D704C9314D066150012C038 /* GeneratePreviewForURL.m in Sources */,
 				9D704C9514D066150012C038 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

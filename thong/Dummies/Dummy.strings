@@ -1,0 +1,4 @@
+/* Localized versions of Info.plist keys */
+
+"First Key"  = "This is the first key of the .strings file"
+"Second Key" = "This is the second key of the .strings file"
