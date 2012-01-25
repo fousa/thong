@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D704C8314D066150012C038 /* QuickLook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704C8214D066150012C038 /* QuickLook.framework */; };
+		9D704C8514D066150012C038 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704C8414D066150012C038 /* ApplicationServices.framework */; };
+		9D704C8714D066150012C038 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704C8614D066150012C038 /* CoreServices.framework */; };
+		9D704C8914D066150012C038 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704C8814D066150012C038 /* CoreFoundation.framework */; };
+		9D704C8F14D066150012C038 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9D704C8D14D066150012C038 /* InfoPlist.strings */; };
+		9D704C9114D066150012C038 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9014D066150012C038 /* GenerateThumbnailForURL.c */; };
+		9D704C9314D066150012C038 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9214D066150012C038 /* GeneratePreviewForURL.c */; };
+		9D704C9514D066150012C038 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9414D066150012C038 /* main.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D704C7F14D066150012C038 /* thong.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thong.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D704C8214D066150012C038 /* QuickLook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickLook.framework; path = System/Library/Frameworks/QuickLook.framework; sourceTree = SDKROOT; };
+		9D704C8414D066150012C038 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		9D704C8614D066150012C038 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
+		9D704C8814D066150012C038 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9D704C8C14D066150012C038 /* thong-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "thong-Info.plist"; sourceTree = "<group>"; };
+		9D704C8E14D066150012C038 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9D704C9014D066150012C038 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		9D704C9214D066150012C038 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		9D704C9414D066150012C038 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		9D704C9614D066150012C038 /* thong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thong-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9D704C7A14D066150012C038 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D704C8314D066150012C038 /* QuickLook.framework in Frameworks */,
+				9D704C8514D066150012C038 /* ApplicationServices.framework in Frameworks */,
+				9D704C8714D066150012C038 /* CoreServices.framework in Frameworks */,
+				9D704C8914D066150012C038 /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D704C7214D066150012C038 = {
+			isa = PBXGroup;
+			children = (
+				9D704C8A14D066150012C038 /* thong */,
+				9D704C8114D066150012C038 /* Frameworks */,
+				9D704C8014D066150012C038 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9D704C8014D066150012C038 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D704C7F14D066150012C038 /* thong.qlgenerator */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D704C8114D066150012C038 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D704C8214D066150012C038 /* QuickLook.framework */,
+				9D704C8414D066150012C038 /* ApplicationServices.framework */,
+				9D704C8614D066150012C038 /* CoreServices.framework */,
+				9D704C8814D066150012C038 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D704C8A14D066150012C038 /* thong */ = {
+			isa = PBXGroup;
+			children = (
+				9D704C9014D066150012C038 /* GenerateThumbnailForURL.c */,
+				9D704C9214D066150012C038 /* GeneratePreviewForURL.c */,
+				9D704C9414D066150012C038 /* main.c */,
+				9D704C8B14D066150012C038 /* Supporting Files */,
+			);
+			path = thong;
+			sourceTree = "<group>";
+		};
+		9D704C8B14D066150012C038 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9D704C8C14D066150012C038 /* thong-Info.plist */,
+				9D704C8D14D066150012C038 /* InfoPlist.strings */,
+				9D704C9614D066150012C038 /* thong-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9D704C7B14D066150012C038 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9D704C7E14D066150012C038 /* thong */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D704C9914D066150012C038 /* Build configuration list for PBXNativeTarget "thong" */;
+			buildPhases = (
+				9D704C7914D066150012C038 /* Sources */,
+				9D704C7A14D066150012C038 /* Frameworks */,
+				9D704C7B14D066150012C038 /* Headers */,
+				9D704C7C14D066150012C038 /* Resources */,
+				9D704C7D14D066150012C038 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = thong;
+			productName = thong;
+			productReference = 9D704C7F14D066150012C038 /* thong.qlgenerator */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9D704C7414D066150012C038 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = 10to1;
+			};
+			buildConfigurationList = 9D704C7714D066150012C038 /* Build configuration list for PBXProject "thong" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9D704C7214D066150012C038;
+			productRefGroup = 9D704C8014D066150012C038 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9D704C7E14D066150012C038 /* thong */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9D704C7C14D066150012C038 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D704C8F14D066150012C038 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		9D704C7D14D066150012C038 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9D704C7914D066150012C038 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D704C9114D066150012C038 /* GenerateThumbnailForURL.c in Sources */,
+				9D704C9314D066150012C038 /* GeneratePreviewForURL.c in Sources */,
+				9D704C9514D066150012C038 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9D704C8D14D066150012C038 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9D704C8E14D066150012C038 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9D704C9714D066150012C038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9D704C9814D066150012C038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9D704C9A14D066150012C038 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thong/thong-Prefix.pch";
+				INFOPLIST_FILE = "thong/thong-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		9D704C9B14D066150012C038 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "thong/thong-Prefix.pch";
+				INFOPLIST_FILE = "thong/thong-Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9D704C7714D066150012C038 /* Build configuration list for PBXProject "thong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D704C9714D066150012C038 /* Debug */,
+				9D704C9814D066150012C038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D704C9914D066150012C038 /* Build configuration list for PBXNativeTarget "thong" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9D704C9A14D066150012C038 /* Debug */,
+				9D704C9B14D066150012C038 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9D704C7414D066150012C038 /* Project object */;
+}
