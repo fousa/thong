@@ -16,6 +16,7 @@
 		9D704C9314D066150012C038 /* GeneratePreviewForURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9214D066150012C038 /* GeneratePreviewForURL.m */; };
 		9D704C9514D066150012C038 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9414D066150012C038 /* main.c */; };
 		9D704CA614D06A3F0012C038 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704CA514D06A3F0012C038 /* Cocoa.framework */; };
+		9D704CAE14D0709E0012C038 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704CAD14D0709E0012C038 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9D704C9414D066150012C038 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		9D704C9614D066150012C038 /* thong-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "thong-Prefix.pch"; sourceTree = "<group>"; };
 		9D704CA514D06A3F0012C038 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		9D704CAD14D0709E0012C038 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D704CAE14D0709E0012C038 /* WebKit.framework in Frameworks */,
 				9D704CA614D06A3F0012C038 /* Cocoa.framework in Frameworks */,
 				9D704C8314D066150012C038 /* QuickLook.framework in Frameworks */,
 				9D704C8514D066150012C038 /* ApplicationServices.framework in Frameworks */,
@@ -52,7 +55,6 @@
 		9D704C7214D066150012C038 = {
 			isa = PBXGroup;
 			children = (
-				9D704CA514D06A3F0012C038 /* Cocoa.framework */,
 				9D704C8A14D066150012C038 /* thong */,
 				9D704C8114D066150012C038 /* Frameworks */,
 				9D704C8014D066150012C038 /* Products */,
@@ -70,6 +72,8 @@
 		9D704C8114D066150012C038 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9D704CAD14D0709E0012C038 /* WebKit.framework */,
+				9D704CA514D06A3F0012C038 /* Cocoa.framework */,
 				9D704C8214D066150012C038 /* QuickLook.framework */,
 				9D704C8414D066150012C038 /* ApplicationServices.framework */,
 				9D704C8614D066150012C038 /* CoreServices.framework */,
