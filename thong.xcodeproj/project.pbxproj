@@ -17,7 +17,21 @@
 		9D704C9514D066150012C038 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D704C9414D066150012C038 /* main.c */; };
 		9D704CA614D06A3F0012C038 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704CA514D06A3F0012C038 /* Cocoa.framework */; };
 		9D704CAE14D0709E0012C038 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D704CAD14D0709E0012C038 /* WebKit.framework */; };
+		9D704CB014D128090012C038 /* thong.qlgenerator in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9D704C7F14D066150012C038 /* thong.qlgenerator */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9D704CAF14D127BD0012C038 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/QuickLook";
+			dstSubfolderSpec = 0;
+			files = (
+				9D704CB014D128090012C038 /* thong.qlgenerator in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9D704C7F14D066150012C038 /* thong.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = thong.qlgenerator; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +139,7 @@
 				9D704C7B14D066150012C038 /* Headers */,
 				9D704C7C14D066150012C038 /* Resources */,
 				9D704C7D14D066150012C038 /* Rez */,
+				9D704CAF14D127BD0012C038 /* CopyFiles */,
 			);
 			buildRules = (
 			);
