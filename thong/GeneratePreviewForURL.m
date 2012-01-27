@@ -14,7 +14,7 @@ void CancelPreviewGeneration(void *thisInterface, QLPreviewRequestRef preview);
    ----------------------------------------------------------------------------- */
 
 OSStatus GeneratePreviewForURL(void *thisInterface, QLPreviewRequestRef preview, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options) {
-    NSString *_content = [NSString stringWithContentsOfURL:(__bridge NSURL *)url encoding:NSUTF8StringEncoding error:nil];
+    NSString *_content = [[NSString alloc] initWithContentsOfURL:(__bridge NSURL *)url usedEncoding:nil error:nil];
     
     QLPreviewRequestSetDataRepresentation(preview,(__bridge CFDataRef)[_content dataUsingEncoding:NSUTF8StringEncoding],kUTTypePlainText,NULL);
     

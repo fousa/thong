@@ -15,7 +15,7 @@ void CancelThumbnailGeneration(void *thisInterface, QLThumbnailRequestRef thumbn
    ----------------------------------------------------------------------------- */
 
 OSStatus GenerateThumbnailForURL(void *thisInterface, QLThumbnailRequestRef thumbnail, CFURLRef url, CFStringRef contentTypeUTI, CFDictionaryRef options, CGSize maxSize) {
-    NSString *_content = [NSString stringWithContentsOfURL:(__bridge NSURL *)url encoding:NSUTF8StringEncoding error:nil];
+    NSString *_content = [[NSString alloc] initWithContentsOfURL:(__bridge NSURL *)url usedEncoding:nil error:nil];
     
     if (_content) {
         // Encapsulate the content of the .strings file in HTML
