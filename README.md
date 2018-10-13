@@ -2,6 +2,9 @@
 
 A Mac OS X plugin that allows you to view your **.string** files with Quick Look.
 
+## Prebuilt download
+https://web.archive.org/web/20170607204019/http://fousa-apps.s3.amazonaws.com/thong/thong-1.1.dmg
+
 ## License
 
 Copyright (c) 2012 Jelle Vandebeeck
